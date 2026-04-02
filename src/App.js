@@ -1,11 +1,19 @@
 
+import MainRoute from "./Routes/MainRoute";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
-function App() {
+import "./Style/Main.css";
+import "./Style/Mobile.css";
+import "./Style/Desktop.css";
+import "./Style/Tablet.css";
+
+const App = () => {
   return (
-    <div>
-      Hello React!
-    </div>
-  );
+    <>
+      <MainRoute />
+    </>
+  )
 }
 
 export default App;
