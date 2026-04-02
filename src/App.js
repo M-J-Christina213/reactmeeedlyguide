@@ -1,5 +1,5 @@
 
-import MainRoute from "./Routes/MainRoute";
+import MainRouter from "./Routes/MainRouter.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
@@ -11,7 +11,7 @@ import "./Style/Tablet.css";
 const App = () => {
   return (
     <>
-      <MainRoute />
+      <MainRouter/>
     </>
   )
 }
