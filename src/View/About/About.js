@@ -1,3 +1,7 @@
+
+
+
+
 import Navigation from "../../Component/Navigation/Navigation";
 import Footer from "../../Component/Footer/Footer";
 function About(){
