@@ -2,10 +2,20 @@ import Navigation from '../Components/Navigation';
 import Footer from '../Components/Footer';
 import React, { useState, useEffect, useRef} from 'react';
 import "../../Style/View/Home/Home.css";
-import { preconnect } from 'react-dom';
+import CommonHomeUtils from '../../Scripts/Home/CommonHomeUtils';
 
 function Home(){
-    const [count, setCount] = useState(0);
+    const [count, setCount] = useState(null);
+    const hasLoaded = useRef(false);
+
+    useEffect(() => {
+        if (!hasLoaded.current) {
+            const savedCount = CommonHomeUtils.getSavedCounter();
+            setCount(savedCount);
+            hasLoaded.current = true;
+        }
+    }, []);
+
     const handleIncrease = () => {
         setCount((prev) => (prev ?? 0) + 1 );
     }
