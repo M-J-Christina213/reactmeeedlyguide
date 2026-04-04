@@ -1,0 +1,54 @@
+.page-wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 500vh;
+}
+
+.main-content {
+    align-items: center;
+    justify-content: center;
+}
+
+.home-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.home-title {
+    font-size: 2.5rem;
+    margin-bottom:0.5rem;
+}
+
+.home-counter{
+    font-size: 2rem;
+    margin: 0.5rem 0 1.5rem;
+}
+
+.button-grip{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.button{
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: var(--ml-general-bg-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: backrgound-color 0.3s ease;
+}
+
+.button.increase{
+    background-color: blue;
+}
+
+.button.decrease{
+    background-color: red;
+}
